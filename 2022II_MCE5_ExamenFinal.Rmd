@@ -58,7 +58,7 @@ En el archivo `"glm.xlsx"` tiene tres datos:
 
 Realice los siguientes análisis: 
 
-- aedes: GLM Poisson
+## aedes: GLM Poisson
 ```{r}
 library(graphics)
 library(MASS)
@@ -79,7 +79,17 @@ summary(modelo)
 ```
 
 
-- disease: GLMs binomiales
+##disease: GLMs binomiales
+```{r}
+glm_disease <- read_excel("disease.xlsx")
+View(diasease)
+summary(glm_disease)
+str(glm_disease)
+plot(glm_disease)
+plot(lm(glm_disease))
+
+```
+-Se puede observar en la grafica que tiene diferencias entre los valores estimados por el modelo y los valores observados
 
 - leishmania: glm bayesiano
 
@@ -146,4 +156,15 @@ Seleccione una especie de planta y una especie de animal; asimismo, dos tipos de
 - Chirimoya: *Anona cherimola*
 
 Luego realice un análisis espacial de distribución de la especie en Ecuador continental en base a los datos de presencia del GBIF (use rgbif para descargar la data). Explique el resultado y compare la diferencia entre la salida de los dos modelos. En qué regiones los modelos difieren más en la predicción?   
+
+```{r}
+# 3.2 Árbol filogenético
+#library(ape)
+#library(phangorn)
+library(phytools)
+library(seqinr)
+library(ape)
+Tapir <- read.csv("sequence(2) fast.txt")
+
+```
 

@@ -1,0 +1,41 @@
+LOCUS       CM053189            25477236 bp    DNA     linear   CON 10-FEB-2023
+DEFINITION  Tapirus terrestris isolate Sample2410 chromosome 16, whole genome
+            shotgun sequence.
+ACCESSION   CM053189 JAPYYE010000000
+VERSION     CM053189.1
+DBLINK      BioProject: PRJNA512907
+            BioSample: SAMN16895775
+KEYWORDS    WGS.
+SOURCE      Tapirus terrestris (Brazilian tapir)
+  ORGANISM  Tapirus terrestris
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Perissodactyla; Tapiridae;
+            Tapirus.
+REFERENCE   1  (bases 1 to 25477236)
+  CONSRTM   Dna Zoo Consortium
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-NOV-2022) Molecular and Human Genetics, Baylor
+            College of Medicine, 1 Baylor Plaza, Houston, TX 77030, USA
+COMMENT     ##Genome-Assembly-Data-START##
+            Assembly Date          :: 29-SEP-2020
+            Assembly Method        :: 3D-DNA v. 2020; JBAT v. 2020 (see
+                                      dnazoo.org/methods)
+            Assembly Name          :: Tapirus_terrestris_HiC
+            Genome Representation  :: Full
+            Expected Final Version :: Yes
+            Genome Coverage        :: 86x
+            Sequencing Technology  :: Illumina NovaSeq 6000
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..25477236
+                     /organism="Tapirus terrestris"
+                     /mol_type="genomic DNA"
+                     /isolate="Sample2410"
+                     /db_xref="taxon:9801"
+                     /chromosome="16"
+                     /sex="male"
+                     /tissue_type="primary fibroblast CL"
+                     /collection_date="1977-08-22"
+CONTIG      join(JAPYYE010000016.1:1..25477236)
+//
+
